@@ -47,7 +47,7 @@
         </div>
         
         <button type="button" 
-        v-bind="{'btn' : true, 'btn-primary': blueBtn, 'btn-danger': !blueBtn}"
+        v-bind:class="{'btn' : true, 'btn-primary': blueBtn, 'btn-danger': !blueBtn}"
         @click="changeColor">Change Color</button>
         <!-- you can write v-bind:class inside v-bind="{'btn' : true, 'btn-primary': blueBtn, 'btn-danger': !blueBtn}" -->
         <!-- this changes the button colour -->
@@ -59,7 +59,7 @@
         </div>
        
         <button type="button" 
-        v-bind="{'btn' :true, 'btn-primary': !redBtn, 'btn-danger':redBtn}"
+        v-bind:class="{'btn' :true, 'btn-primary': !redBtn, 'btn-danger':redBtn}"
         @click="changeTextColor">Change Text Color</button> 
     </div>
 
